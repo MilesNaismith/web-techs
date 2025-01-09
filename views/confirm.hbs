@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="register.css">
+    </head>
+    <body>
+        <h1>Вы успешно зарегистрированы!</h1>
+        <h2>Ваши данные</h2>
+        
+        <table class="confirm_table">
+            <tbody>
+                <tr>
+                    <td>ФИО</td>
+                    <td>
+                        {{name}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>Номер телефона</td>
+                    <td>
+                        {{phone}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>{{email}}</td>
+                </tr>
+                <tr>
+                    <td>День рождения</td>
+                    <td>{{birthday}}</td>
+                </tr>
+                <tr>
+                    <td>Секции конференции</td>
+                    <td>{{section}}</td>
+                </tr>
+                <tr>
+                    <td>Тема личного доклада</td>
+                    <td>{{theme}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
