@@ -1,0 +1,29 @@
+.photo {
+    width: 200px;
+    margin: 10px;
+    align-self: center;
+    justify-self: center;
+    flex-direction: column; 
+    flex: 1;
+    text-align: center;
+  }
+.big-photo {
+align-self: center;
+justify-self: center; 
+flex: 1;
+}
+body {
+background-color: rgb(49, 45, 45);
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column; 
+flex: 1;
+text-align: center;
+margin: 10px;
+}
+
+h1 {
+color: rgb(228, 228, 243);
+font-family: Verdana;
+}
