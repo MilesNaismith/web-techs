@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="galery.css">
+    </head>
+    <body>
+        <script>
+            function open_photo(photo) {
+                document.getElementById("big-photo").innerHTML =
+                    ("<img onclick='close_photo()' class='big-photo';' src='" + photo + "'>")
+                }
+        </script>
+        <script>
+            function close_photo() {
+                document.getElementById("big-photo").innerHTML = ""
+                }
+        </script>
+        
+        <h1>Фотогалерея</h1>
+        
+        <span id="big-photo"></span>
+        <img onclick="open_photo('https://i.pinimg.com/736x/f8/eb/48/f8eb48adc8a1ac68992a6ec9ea2419dc.jpg')" class="photo" src="https://i.pinimg.com/736x/f8/eb/48/f8eb48adc8a1ac68992a6ec9ea2419dc.jpg">
+        
+        <span id="big-photo"></span>
+        <img onclick="open_photo('https://img.belta.by/images/storage/news/with_archive/2021/000029_1630402345_457669_big.jpg')" class="photo" src="https://img.belta.by/images/storage/news/with_archive/2021/000029_1630402345_457669_big.jpg">
+    
+        <span id="big-photo"></span>
+        <img onclick="open_photo('https://ss.sport-express.ru/userfiles/materials/181/1812921/large.jpg')" class="photo" src="https://ss.sport-express.ru/userfiles/materials/181/1812921/large.jpg">
+    
+        <span id="big-photo"></span>
+        <img onclick="open_photo('https://forum.rmrp.ru/data/avatars/o/13/13826.jpg')" class="photo" src="https://forum.rmrp.ru/data/avatars/o/13/13826.jpg">
+    
+    
+    
+    </body>
+</html>

@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="register.css">
+    </head>
+    <body>
+        <h1>Анкета участника конференции</h1>
+ 
+        <h2>Пожалуйста, заполните анкету для перехода в основное меню</h2>
+ 
+        <form method="post" class="register_form_parent">
+            <fieldset class="register_form">
+                <label for="name">Фамилия Имя Отчество:</br> </label>
+                <input 
+                    type="text" 
+                    name="name" 
+                    id="name" 
+                    pattern="[а-яА-ЯЁё]+\s[а-яА-ЯЁё]+\s[а-яА-ЯЁё]+" 
+                    require
+                />
+            </fieldset>
+ 
+            <fieldset class="register_form">
+                <label for="phone">Телефон:</br>
+                </label>
+                <input 
+                    type="tel" 
+                    name="phone" 
+                    id="phone" 
+                    pattern="[+7][0-9]{11}" 
+                    placeholder="+71234567890"
+                    required 
+                />
+            </fieldset>
+ 
+            <fieldset class="register_form">
+                <label for="email">Email: </br></label>
+                <input 
+                    type="email" 
+                    name="email" 
+                    id="email" 
+                    required 
+                />
+            </fieldset>
+ 
+            <fieldset class="register_form" class="select">
+                    <label>Секции конференции:</br></label>
+                    <fieldset class="sections" class="select">
+                        <div class="choose_opts">
+                            <input type="checkbox" id="maths" name="maths" value="Математика"/>
+                            <label for="maths">Математика</label>
+                        </div>
+                        <div class="choose_opts">
+                            <input type="checkbox" id="physics" name="physics" value="Физика"/>
+                            <label for="physics">Физика</label>
+                        </div>
+                        <div class="choose_opts">
+                            <input type="checkbox" id="informatics" name="informatics" value="Информатика"/>
+                            <label for="informatics">Информатика</label>
+                        </div>
+                </fieldset>
+            </fieldset>
+    
+            <fieldset class="register_form">
+                <label for="birthday">Дата рождения: </br></label>
+                <input type="Date" name="birthday" id="birthday" />
+            </fieldset>
+            <fieldset class="register_form">
+                <label for="report">Доклад</br></label>
+                <input type="checkbox" id="report" name="report" onclick="report_theme()" />
+            </fieldset>
+
+            <script>
+                function report_theme() {
+                var checkBox = document.getElementById("report");
+                var text = document.getElementById("theme");
+                if (checkBox.checked == true){
+                    text.style.display = "block";
+                } else {
+                    text.style.display = "none";
+                }
+                }
+            </script>
+
+            <fieldset class="register_form" id="theme" name="theme" style="display:none">
+                <label for="theme">Тема доклада:</br> </label>
+                <input type="data" id="theme" name="theme"/>
+            </fieldset>
+
+            <fieldset class="register_form">
+            <input type="submit" value="Отправить"  />
+            </fieldset>
+        </form>
+    </body>
+</html>

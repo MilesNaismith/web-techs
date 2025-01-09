@@ -1,0 +1,94 @@
+body {
+    background-color: white;
+    text-align: center;
+  }
+  
+  h1 {
+    color: navy;
+  }
+
+  .test_form_parent {
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    flex: 1;
+
+  }
+  .shadowbox {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    width: 15em;
+    height: 10em;
+    border: 1px solid #333;
+    box-shadow: 8px 8px 5px #444;
+    padding: 8px 12px;
+    background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc);
+    margin: 10px auto;
+  }
+  
+  .sections {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+  }
+  .confirm_table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    flex: 1;
+
+  }
+ 
+  .test_form{
+    background-color:lightblue;
+    text-align: center;
+    justify-content: center;
+    justify-self: center;
+    flex-direction: row;
+    margin: 10px auto;
+    border:0 none;
+    width: 60em;
+
+  }
+  .test_submit{
+    background-color:lightblue;
+    text-align: center;
+    justify-content: center;
+    flex-direction: row;
+    margin: 10px;
+  }
+  .select2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+
+  }
+  .select5{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+
+  }
+  .select1{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-self: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .choose_opts{
+    align-self: flex-start;
+  }
+
+

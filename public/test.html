@@ -1,0 +1,125 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="test.css">
+    </head>
+    <body>
+        <h1>Тест</h1>
+ 
+        <h2>Пожалуйста, пройдите тест</h2>
+<!--Вопрос №1 -->
+        <form method="post" class="test_form_parent">
+            <fieldset class="test_form" class="select">
+                    <fieldset class="sections" class="select3">
+                        <legend>Что такое информация?</br></legend>
+                        <div class="shadowbox">
+                            <input type="checkbox" id="q1a1" onclick="test_answer2()" name="q1" value="q1a1"/>
+                            <label for="q1a1">Знания и сведения, необходимые для ориентирования и взаимодействия с окружающей средой</label>
+                        </div>
+                        <div class="shadowbox">
+                            <input type="checkbox" id="q1a2" onclick="test_answer2()" name="q1" value="q1a2"/>
+                            <label for="q1a2">Абстрактные осмысленные представления суждений о каком либо объекте</label>
+                        </div>
+                        <div class="shadowbox">
+                            <input type="checkbox" id="q1a3" onclick="test_answer2()" name="q1" value="q1a3"/>
+                            <label for="q1a3">Единица измерения количества вещества в Международной системе единиц (СИ)</label>
+                        </div>
+                </fieldset>
+            </fieldset>
+<!--Вопрос №2 -->
+            <fieldset class="test_form">
+                <fieldset class="select2">
+                    <legend>В какой системе счисления для записи числа используются только цифры "0" и "1"?</legend>
+                    <div class="shadowbox">
+                        <input type="radio" id="q2a1" name="q2" value="q2a1"/>
+                        <label for="q2a1">Десятичная</label>
+                    </div>
+                    <div class="shadowbox">
+                        <input type="radio" id="q2a2" name="q2" value="q2a2"/>
+                        <label for="q2a2">Двоичная</label>
+                    </div>
+                    <div class="shadowbox">
+                        <input type="radio" id="q2a3" name="q2" value="q2a3"/>
+                        <label for="q2a3">Восьмериченая</label>
+                    </div>
+                    <div class="shadowbox">
+                        <input type="radio" id="q2a4" name="q2" value="q2a4"/>
+                        <label for="q2a4">Шестнадцатериченая</label>
+                    </div>
+            </fieldset>
+        </fieldset>
+<!--Вопрос №3 -->
+        <fieldset class="test_form" >
+            <fieldset class="select2">
+                <legend>Могут ли быть несколько окон активными одновременно?</legend>
+                <div class="shadowbox">
+                    <input type="radio" id="q3a1" name="q3" value="q3a1"/>
+                    <label for="q3a1">Да</label>
+                </div>
+                <div class="shadowbox">
+                    <input type="radio" id="q3a2" name="q3" value="q3a2"/>
+                    <label for="q3a2">Нет</label>
+                </div>
+        </fieldset>
+    </fieldset>
+<!--Вопрос №4 -->
+    <fieldset class="test_form">
+        <fieldset class="select1">
+                <legend>Как называется предмет, для сдачи которого написан данный тест?</legend>
+                <div class="shadowbox">
+                    <input type="text" id="q4a1" name="q4" value=""/>
+                </div>
+                
+        </fieldset>
+    </fieldset>
+<!--Вопрос №5 -->
+    <fieldset class="test_form" class="select">
+        <fieldset class="select5">
+                <legend>Вставьте пропущенные слова</legend>
+                <label> </label>
+                <label for="city-select">По полям, по полям синий   </label>
+                <select name="q51" id="q51">
+                    <option value="q51a0">-- Выберите ответ --</option>
+                    <option value="q51a1">Аттрактор</option>
+                    <option value="q51a2">Коллайдер</option>
+                    <option value="q51a3">Дезинсектор</option>
+                    <option value="q51a4">Трактор</option>
+                </select>
+                <label> едет к нам, у него в   </label>
+                <select name="q52" id="q52">
+                    <option value="q52a0">-- Выберите ответ --</option>
+                    <option value="q52a1">Кузовке</option>
+                    <option value="q52a2">Пучке</option>
+                    <option value="q52a3">Баллоне</option>
+                    <option value="q52a4">Прицепе</option>
+                </select>
+                <label> кто, попробуй угадай!</label>
+        </fieldset>
+    </fieldset>
+<!--Вопрос №6 -->    
+    <fieldset class="test_form" >
+        <fieldset class="sections">
+            <legend>Какой символ заменяет только один символ в имени файла?</legend>
+            <div class="shadowbox">
+                <input type="radio" id="q6a1" name="q6" value="q6a1"/>
+                <label for="q6a1">?</label>
+            </div>
+            <div class="shadowbox">
+                <input type="radio" id="q6a2" name="q6" value="q6a2"/>
+                <label for="q6a2">\</label>
+            </div>
+            <div class="shadowbox">
+                <input type="radio" id="q6a3" name="q6" value="q6a3"/>
+                <label for="q6a3">*</label>
+            </div>
+    </fieldset>
+</fieldset>
+
+
+
+<!--Отправка -->
+            <fieldset class="test_submit">
+            <input type="submit" value="Отправить"  />
+            </fieldset>
+        </form>
+    </body>
+</html>
